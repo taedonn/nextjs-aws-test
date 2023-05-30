@@ -1,6 +1,6 @@
 {
-    "name": "fonts-archive",
-    "version": "0.1.0",
+    "name": "banner-archive",
+    "version": "0.0.0",
     "private": true,
     "homepage": "https://banner.taedonn.com",
     "postinstall": "prisma generate",
