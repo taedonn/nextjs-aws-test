@@ -1,2 +1,3 @@
-# banner-archive
-반응형 배너 아카이브
+# 배너 아카이브
+
+https://banner.taedonn.com
