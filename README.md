@@ -1,3 +1,3 @@
-# 배너 아카이브
+# 3D 아카이브
 
-https://banner.taedonn.com
+https://3d.taedonn.com

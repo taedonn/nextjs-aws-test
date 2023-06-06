@@ -1,8 +1,8 @@
 {
-    "name": "banner-archive",
+    "name": "3d-archive",
     "version": "0.0.0",
     "private": true,
-    "homepage": "https://banner.taedonn.com",
+    "homepage": "https://3d.taedonn.com",
     "postinstall": "prisma generate",
     "scripts": {
         "dev": "next dev",
@@ -11,7 +11,7 @@
         "lint": "next lint"
     },
     "dependencies": {
-        "@prisma/client": "^4.13.0",
+        "@prisma/client": "^4.15.0",
         "@types/lodash": "^4.14.194",
         "@types/node": "20.1.0",
         "@types/react": "18.2.6",
@@ -34,6 +34,6 @@
         "typescript": "5.0.4"
     },
     "devDependencies": {
-        "prisma": "^4.13.0"
+        "prisma": "^4.15.0"
     }
 }
