@@ -4,11 +4,12 @@ import Header from "@/components/Header";
 const Index = ({params}: any) => {
     return (
         <>
+            <Header/>
         </>
     );
 }
 
-export async function getStaticProps(ctx: any) {
+export async function getServerSideProps(ctx: any) {
     try {
         return {
             props: {
