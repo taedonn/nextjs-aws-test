@@ -6,6 +6,12 @@ https://nextjs-aws-test.vercel.app
 
 &nbsp;
 
+### Blog post : Upload files to S3 through API Gateway
+
+[How do I upload an image or PDF file to Amazon S3 through API Gateway?](https://repost.aws/knowledge-center/api-gateway-upload-image-s3)
+
+&nbsp;
+
 ### Packages & version
 ```
 "dependencies": {
@@ -19,9 +25,3 @@ https://nextjs-aws-test.vercel.app
     "axios": "^1.4.0"
 }
 ```
-
-&nbsp;
-
-### Blog post : Upload files to S3 through API Gateway
-
-[How do I upload an image or PDF file to Amazon S3 through API Gateway?](https://repost.aws/knowledge-center/api-gateway-upload-image-s3)
