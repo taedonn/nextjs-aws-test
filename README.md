@@ -1,3 +1,3 @@
-# Next.js 테스트용 레포지토리
+# Next.js test repository
 
 https://nextjs-test-git-main.vercel.app
