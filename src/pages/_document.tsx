@@ -8,10 +8,9 @@ class MyDocument extends Document {
         return (
             <Html lang="ko">
                 <Head>
-                    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fonts-archive/SpoqaHanSansNeo/SpoqaHanSansNeo.css" type="text/css"/>
                     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" type="text/css"></link>
                 </Head>
-                <body style={{fontFamily: "Spoqa Han Sans Neo, Noto Sans KR"}}>
+                <body style={{fontFamily: "Noto Sans KR"}} className="bg-theme-10">
                     <Main/>
                     <NextScript/>
                 </body>

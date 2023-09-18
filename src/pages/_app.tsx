@@ -16,14 +16,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <>
             <QueryClientProvider client={queryClient}>
                 <NextSeo
-                    title="Next.js test"
-                    description="Next.js test repository"
-                    additionalLinkTags={[
-                        {
-                            rel:"icon",
-                            href: "/favicon.svg"
-                        }
-                    ]}
+                    title="Upload files to S3 with Next.js"
+                    description="Amazon Web Service(AWS) test website with next.js"
                 />
                 <main>
                     <Component {...pageProps}/>

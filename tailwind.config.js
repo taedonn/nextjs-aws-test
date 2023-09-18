@@ -15,6 +15,16 @@ module.exports = {
             },
             colors: {
                 "transparent": "transparent",
+                "theme-1": "#FFFFFF",
+                "theme-2": "#EFF2F5",
+                "theme-3": "#DCE0E4",
+                "theme-4": "#CCD1D7",
+                "theme-5": "#B7BDC3",
+                "theme-6": "#9FA4AA",
+                "theme-7": "#878B90",
+                "theme-8": "#63666A",
+                "theme-9": "#3A3A3A",
+                "theme-10": "#202020"
             },
             width: {
                 "content": "max-content",
