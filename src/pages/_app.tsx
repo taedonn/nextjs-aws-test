@@ -16,8 +16,8 @@ export default function App({ Component, pageProps }: AppProps) {
         <>
             <QueryClientProvider client={queryClient}>
                 <NextSeo
-                    title="3D 아카이브"
-                    description="3D 오브젝트 아카이브"
+                    title="Next.js test"
+                    description="Next.js test repository"
                     additionalLinkTags={[
                         {
                             rel:"icon",

@@ -1,10 +1,11 @@
 // 컴포넌트
-import Header from "@/components/Header";
 
 const Index = ({params}: any) => {
     return (
         <>
-            <Header/>
+            <div>
+                
+            </div>
         </>
     );
 }

@@ -15,11 +15,9 @@ module.exports = {
             },
             colors: {
                 "transparent": "transparent",
-                "white-1": "#000000",
-                "purple-gradient": "linear-gradient(to bottom right, #523EE8, #8070FF)"
             },
             width: {
-                "content": "max-content"
+                "content": "max-content",
             },
         },
     },
