@@ -12,7 +12,7 @@ https://nextjs-aws-test.vercel.app
 
 &nbsp;
 
-### Packages & version
+## Packages & version
 ```
 "dependencies": {
     "@aws-sdk/client-s3": "^3.391.0",
