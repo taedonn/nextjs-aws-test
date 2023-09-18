@@ -1,3 +1,5 @@
-# Next.js test repository
+# AWS test repository with next.js
 
-https://nextjs-test-git.vercel.app
+A simple next.js project to test uploading files to S3 storage via aws-sdk v3 for javascript.
+
+https://nextjs-aws-test.vercel.app
