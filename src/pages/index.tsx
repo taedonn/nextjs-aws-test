@@ -3,7 +3,7 @@ const Index = ({params}: any) => {
         <>
             <div className="w-[100%] mt-[120px] flex flex-col justify-center items-center">
                 <h1 className="text-[28px] text-theme-3 font-bold mb-[8px]">Upload files to S3 through API Gateway</h1>
-                <h2 className="text-[14px] text-theme-7 text-center leading-tight mb-[24px]">A simple next.js project to test file upload to S3 storage via aws-sdk for javascript v3</h2>
+                <h2 className="text-[14px] text-theme-7 text-center leading-tight mb-[24px]">A simple next.js project to test uploading files to S3 storage via aws-sdk for javascript v3</h2>
                 <div className="w-[580px] p-[16px] border rounded-[12px] border-theme-7">
                     <div className="w-[100%] h-[300px] rounded-[12px] flex flex-col justify-center items-center bg-theme-9">
                         <svg className="w-[180px] fill-theme-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
