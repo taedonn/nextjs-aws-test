@@ -7,11 +7,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-input, button, a {
-    border: none;
-    outline: none;
-    background-color: transparent;
-}
 
 /* 로딩 스피너 */
 .loader {

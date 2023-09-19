@@ -24,7 +24,9 @@ module.exports = {
                 "theme-7": "#878B90",
                 "theme-8": "#63666A",
                 "theme-9": "#3A3A3A",
-                "theme-10": "#202020"
+                "theme-10": "#202020",
+                "theme-blue-1": "#9ABDDC",
+                "theme-blue-2": "#648BC0"
             },
             width: {
                 "content": "max-content",
