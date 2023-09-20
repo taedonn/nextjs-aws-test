@@ -64,7 +64,7 @@ const Index = ({params}: any) => {
     return (
         <>
             <div className="w-[100%] mt-[120px] flex flex-col justify-center items-center">
-                <h1 className="text-[28px] text-theme-2 font-bold mb-[8px]">Upload files to S3 through API Gateway</h1>
+                <h1 className="text-[24px] text-theme-2 font-bold mb-[8px]">Upload files to S3 through aws-sdk for javascript</h1>
                 <h2 className="text-[14px] text-theme-7 text-center leading-tight mb-[12px]">A simple next.js project to test uploading files to S3 storage via aws-sdk for javascript v3</h2>
                 <a href="https://github.com/taedonn/nextjs-aws-test" target="_blank" className="mb-[24px] text-[14px] text-theme-blue-3 underline">View this repo in GitHub</a>
                 <div className="w-[580px] p-[16px] border rounded-[12px] border-theme-7">
@@ -85,8 +85,8 @@ const Index = ({params}: any) => {
                     <button onClick={clearImg} className="w-[88px] h-[32px] ml-[12px] flex justify-center items-center text-[14px] text-theme-10 font-medium rounded-[8px] border-b-[3px] border-r-[3px] border-theme-8 bg-theme-5 hover:bg-theme-5/80 cursor-pointer">Clear</button>
                 </div>
                 <div className="w-[580px] flex flex-col mt-[100px] mb-[60px]">
-                    <div className="text-[20px] text-theme-3 font-bold mb-[8px] pb-[8px] border-b border-theme-7">Blog post : Upload files to S3 through API Gateway</div>
-                    <a href="https://github.com/taedonn/nextjs-aws-test" target="_blank" className="text-[14px] text-theme-blue-3 hover:underline">How do I upload an image or PDF file to Amazon S3 through API Gateway?</a>
+                    <div className="text-[20px] text-theme-3 font-bold mb-[8px] pb-[8px] border-b border-theme-7">Reference post : Upload files to S3 through API Gateway</div>
+                    <a href="https://repost.aws/knowledge-center/api-gateway-upload-image-s3" target="_blank" className="text-[14px] text-theme-blue-3 hover:underline">How do I upload an image or PDF file to Amazon S3 through API Gateway?</a>
                 </div>
                 <div className="w-[580px] flex flex-col">
                     <div className="text-[20px] text-theme-3 font-bold mb-[12px] pb-[8px] border-b border-theme-7">Packages & version</div>
