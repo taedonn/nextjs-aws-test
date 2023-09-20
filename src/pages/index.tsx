@@ -65,13 +65,15 @@ const Index = ({params}: any) => {
         <>
             <div className="w-[100%] mt-[120px] flex flex-col justify-center items-center">
                 <h1 className="text-[28px] text-theme-2 font-bold mb-[8px]">Upload files to S3 through API Gateway</h1>
-                <h2 className="text-[14px] text-theme-7 text-center leading-tight mb-[24px]">A simple next.js project to test uploading files to S3 storage via aws-sdk for javascript v3</h2>
+                <h2 className="text-[14px] text-theme-7 text-center leading-tight mb-[12px]">A simple next.js project to test uploading files to S3 storage via aws-sdk for javascript v3</h2>
+                <a href="https://github.com/taedonn/nextjs-aws-test" target="_blank" className="mb-[24px] text-[14px] text-theme-blue-3 underline">View this repo in GitHub</a>
                 <div className="w-[580px] p-[16px] border rounded-[12px] border-theme-7">
                     {
                         imgDisplay
+                        // eslint-disable-next-line @next/next/no-img-element
                         ? <img src={imgUrl} alt="" className="w-[100%] rounded-[12px]"/>
-                        : <div className="w-[100%] h-[300px] rounded-[12px] flex flex-col justify-center items-center bg-theme-9">
-                            <svg className="w-[180px] fill-theme-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+                        : <div className="w-[100%] h-[300px] rounded-[12px] flex flex-col justify-center items-center bg-theme-9/60">
+                            <svg className="w-[180px] fill-theme-8/60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                                 <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/>
                             </svg>
                         </div>
@@ -81,6 +83,31 @@ const Index = ({params}: any) => {
                     <input ref={inputRef} onChange={uploadImg} id='img-upload' type='file' accept='image/*' className='hidden'/>
                     <label htmlFor='img-upload' className='w-[120px] h-[32px] flex justify-center items-center text-[14px] text-theme-10 font-medium rounded-[8px] border-b-[3px] border-r-[3px] border-theme-blue-2 bg-theme-blue-1 hover:bg-theme-blue-1/80 cursor-pointer'>Upload image</label>
                     <button onClick={clearImg} className="w-[88px] h-[32px] ml-[12px] flex justify-center items-center text-[14px] text-theme-10 font-medium rounded-[8px] border-b-[3px] border-r-[3px] border-theme-8 bg-theme-5 hover:bg-theme-5/80 cursor-pointer">Clear</button>
+                </div>
+                <div className="w-[580px] flex flex-col mt-[100px] mb-[60px]">
+                    <div className="text-[20px] text-theme-3 font-bold mb-[8px] pb-[8px] border-b border-theme-7">Blog post : Upload files to S3 through API Gateway</div>
+                    <a href="https://github.com/taedonn/nextjs-aws-test" target="_blank" className="text-[14px] text-theme-blue-3 hover:underline">How do I upload an image or PDF file to Amazon S3 through API Gateway?</a>
+                </div>
+                <div className="w-[580px] flex flex-col">
+                    <div className="text-[20px] text-theme-3 font-bold mb-[12px] pb-[8px] border-b border-theme-7">Packages & version</div>
+                    <pre style={{fontFamily: "Noto Sans KR", tabSize: 8}} className="w-[100%] p-[20px] rounded-[12px] text-[14px] text-theme-3 bg-theme-9/60">
+                        {
+`"dependencies": {
+    "@aws-sdk/client-s3": "^3.414.0",
+    "@aws-sdk/s3-request-presigner": "^3.414.0",
+    "eslint": "8.40.0",
+    "eslint-config-next": "13.4.1",
+    "next": "13.4.1",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "axios": "^1.4.0"
+}`
+                        }
+                    </pre>
+                </div>
+                <div className="w-[480px] mt-[80px] mb-[60px] text-[12px] text-theme-7 text-center leading-relaxed">
+                    Copyright 2023, taedonn, all rights reserved. <br/>
+                    check my GitHub @ <a href="https://github.com/taedonn" target="_blank" className="underline">github.com/taedonn</a>
                 </div>
             </div>
         </>
