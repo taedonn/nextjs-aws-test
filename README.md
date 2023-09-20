@@ -1,6 +1,6 @@
 # AWS test repository with next.js
 
-A simple next.js project to test uploading files to S3 storage via aws-sdk for javascript v3.
+A simple next.js project to test uploading files to S3 storage through aws-sdk for javascript v3.
 
 https://nextjs-aws-test.vercel.app
 
@@ -15,8 +15,8 @@ https://nextjs-aws-test.vercel.app
 ## Packages & version
 ```
 "dependencies": {
-    "@aws-sdk/client-s3": "^3.391.0",
-    "@aws-sdk/s3-request-presigner": "^3.391.0",
+    "@aws-sdk/client-s3": "^3.414.0",
+    "@aws-sdk/s3-request-presigner": "^3.414.0",
     "eslint": "8.40.0",
     "eslint-config-next": "13.4.1",
     "next": "13.4.1",
