@@ -5,11 +5,15 @@ import { useState, useRef, ChangeEvent } from "react";
 import axios from "axios";
 
 const Index = ({params}: any) => {
+    const [isLoading, setIsLoading] = useState<boolean>(false);
     const [imgDisplay, setImgDisplay] = useState<boolean>(false);
     const [imgUrl, setImgUrl] = useState<string>('');
 
     // when image is uploaded
     const uploadImg = async (e: ChangeEvent<HTMLInputElement>) => {
+        // loading spinner on
+        setIsLoading(true);
+
         if (e.target.files && e.target.files[0]) {
             const file = e.target.files[0];
 
@@ -38,6 +42,7 @@ const Index = ({params}: any) => {
                         console.log(res.data.url);
 
                         // change default vector icon to uploaded img
+                        setIsLoading(false);
                         setImgDisplay(true);
                         setImgUrl(res.data.url);
                     })
@@ -45,6 +50,9 @@ const Index = ({params}: any) => {
             })
             .catch(err => console.log(err));
         }
+
+        // loading spinner off
+        setIsLoading(false);
     }
 
     // ref input
@@ -72,10 +80,17 @@ const Index = ({params}: any) => {
                         imgDisplay
                         // eslint-disable-next-line @next/next/no-img-element
                         ? <img src={imgUrl} alt="" className="w-[100%] rounded-[12px]"/>
-                        : <div className="w-[100%] h-[300px] rounded-[12px] flex flex-col justify-center items-center bg-theme-9/60">
+                        : <div className="w-[100%] h-[300px] relative rounded-[12px] overflow-hidden flex flex-col justify-center items-center bg-theme-9/60">
                             <svg className="w-[180px] fill-theme-8/60" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
                                 <path d="M.002 3a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-12a2 2 0 0 1-2-2V3zm1 9v1a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.5l-3.777-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12zm5-6.5a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z"/>
                             </svg>
+                            {
+                                isLoading
+                                ? <div className="w-[100%] h-[100%] absolute z-10 left-0 top-0 flex justify-center items-center bg-theme-8/60">
+                                    <span className="loader"></span>
+                                </div>
+                                : <></>
+                            }
                         </div>
                     }
                 </div>
