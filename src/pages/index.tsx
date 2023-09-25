@@ -71,11 +71,11 @@ const Index = ({params}: any) => {
 
     return (
         <>
-            <div className="w-[100%] mt-[120px] flex flex-col justify-center items-center">
+            <div className="w-[100%] mt-[120px] tsm:mt-[80px] tsm:px-[16px] flex flex-col justify-center items-center">
                 <h1 className="text-[24px] text-theme-2 font-bold mb-[8px]">Upload files to S3 through aws-sdk for javascript</h1>
-                <h2 className="text-[14px] text-theme-7 text-center leading-tight mb-[12px]">A simple next.js project to test uploading files to S3 storage via aws-sdk for javascript v3</h2>
-                <a href="https://github.com/taedonn/nextjs-aws-test" target="_blank" className="mb-[24px] text-[14px] text-theme-blue-3 underline">View this repo in GitHub</a>
-                <div className="w-[580px] p-[16px] border rounded-[12px] border-theme-7">
+                <h2 className="text-[14px] text-theme-7 text-center tsm:text-left leading-tight mb-[12px]">A simple next.js project to test uploading files to S3 storage via aws-sdk for javascript v3</h2>
+                <a href="https://github.com/taedonn/nextjs-aws-test" target="_blank" className="tsm:w-[100%] mb-[24px] text-[14px] text-theme-blue-3 underline">View this repo in GitHub</a>
+                <div className="w-[580px] tsm:w-[100%] p-[16px] border rounded-[12px] border-theme-7">
                     {
                         imgDisplay
                         ? <div className="relative rounded-[12px] overflow-hidden">
@@ -108,13 +108,13 @@ const Index = ({params}: any) => {
                     <label htmlFor='img-upload' className='w-[120px] h-[32px] flex justify-center items-center text-[14px] text-theme-10 font-medium rounded-[8px] border-b-[3px] border-r-[3px] border-theme-blue-2 bg-theme-blue-1 hover:bg-theme-blue-1/80 cursor-pointer'>Upload image</label>
                     <button onClick={clearImg} className="w-[88px] h-[32px] ml-[12px] flex justify-center items-center text-[14px] text-theme-10 font-medium rounded-[8px] border-b-[3px] border-r-[3px] border-theme-8 bg-theme-5 hover:bg-theme-5/80 cursor-pointer">Clear</button>
                 </div>
-                <div className="w-[580px] flex flex-col mt-[100px] mb-[60px]">
+                <div className="w-[580px] tsm:w-[100%] flex flex-col mt-[100px] tsm:mt-[80px] mb-[60px]">
                     <div className="text-[20px] text-theme-3 font-bold mb-[8px] pb-[8px] border-b border-theme-7">Reference post : Upload files to S3 through API Gateway</div>
                     <a href="https://repost.aws/knowledge-center/api-gateway-upload-image-s3" target="_blank" className="text-[14px] text-theme-blue-3 hover:underline">How do I upload an image or PDF file to Amazon S3 through API Gateway?</a>
                 </div>
-                <div className="w-[580px] flex flex-col">
+                <div className="w-[580px] tsm:w-[100%] flex flex-col">
                     <div className="text-[20px] text-theme-3 font-bold mb-[12px] pb-[8px] border-b border-theme-7">Packages & version</div>
-                    <pre style={{fontFamily: "Noto Sans KR", tabSize: 8}} className="w-[100%] p-[20px] rounded-[12px] text-[14px] text-theme-3 bg-theme-9/60">
+                    <pre style={{fontFamily: "Noto Sans KR", tabSize: 8}} className="w-[100%] p-[20px] rounded-[12px] text-[14px] text-theme-3 bg-theme-9/60 overflow-x-scroll">
                         {
 `"dependencies": {
     "@aws-sdk/client-s3": "^3.414.0",
@@ -129,7 +129,7 @@ const Index = ({params}: any) => {
                         }
                     </pre>
                 </div>
-                <div className="w-[480px] mt-[80px] mb-[60px] text-[12px] text-theme-7 text-center leading-relaxed">
+                <div className="w-[480px] tsm:w-[100%] mt-[80px] tsm:mt-[60px] mb-[60px] tsm:mb-[40px] text-[12px] text-theme-7 text-center leading-relaxed">
                     Copyright 2023, taedonn, all rights reserved. <br/>
                     check my GitHub @ <a href="https://github.com/taedonn" target="_blank" className="underline">github.com/taedonn</a>
                 </div>
