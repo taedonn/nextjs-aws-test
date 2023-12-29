@@ -130,7 +130,7 @@ const Index = ({params}: any) => {
                     </pre>
                 </div>
                 <div className="w-[480px] tsm:w-[100%] mt-[80px] tsm:mt-[60px] mb-[60px] tsm:mb-[40px] text-[12px] text-theme-7 text-center leading-relaxed">
-                    Copyright 2023, taedonn, all rights reserved. <br/>
+                    Copyright 2023 - {new Date().getFullYear()}, taedonn, all rights reserved. <br/>
                     check my GitHub @ <a href="https://github.com/taedonn" target="_blank" className="underline">github.com/taedonn</a>
                 </div>
             </div>
